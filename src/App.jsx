@@ -11,6 +11,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Playground from './pages/Playground';
 import NotFound from './pages/NotFound';
+import StartProjectOverlay from './components/StartProjectOverlay';
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
               </Routes>
             </PageTransition>
           </Layout>
+          <StartProjectOverlay />
         </div>
       </LenisProvider>
     </ThemeProvider>
