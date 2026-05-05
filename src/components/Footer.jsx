@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { site } from '../data/site';
 import Marquee from './Marquee';
+import tronzlabsLogo from '../assets/tronzlabs-logo.png';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -81,6 +82,15 @@ export default function Footer() {
           <p className="font-mono uppercase tracking-[0.18em] opacity-60">
             © {year} {site.name}. All rights reserved.
           </p>
+          <div className="flex items-center gap-2 font-mono opacity-60 normal-case tracking-normal">
+            <span>Built by</span>
+            <a href="https://tronzlabs.com" target="_blank" rel="noreferrer" className="font-medium hover:opacity-80">
+              <span className="text-current">Tron</span>
+              <span className="text-red-500 underline underline-offset-2">z</span>
+              <span className="text-current">labs</span>
+            </a>
+            <img src={tronzlabsLogo} alt="Tronzlabs logo" className="h-4 w-4 object-contain" />
+          </div>
           <p className="font-mono uppercase tracking-[0.18em] opacity-60">
             Crafted with care · v1.0
           </p>
